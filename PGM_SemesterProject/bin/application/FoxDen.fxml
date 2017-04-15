@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="TabPanel" maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" type="TabPane"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="FoxDenController">
+	<tabs>
+		<Tab fx:id="WelcomeTab" text="Fox Den">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+					prefWidth="200.0">
+					<children>
+						<ImageView fx:id="greenbox1" fitHeight="208.0" fitWidth="197.0"
+							pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@_FallSemester2015/CSCI136_FundofComputerScience2/_workspace/PGM_SemesterProject/src/application/GreenBox.jpg" />
+							</image>
+						</ImageView>
+						<ImageView fx:id="greenbox2" fitHeight="210.0" fitWidth="197.0"
+							layoutX="407.0" layoutY="166.0" pickOnBounds="true"
+							preserveRatio="true">
+							<image>
+								<Image
+									url="@_FallSemester2015/CSCI136_FundofComputerScience2/_workspace/PGM_SemesterProject/src/application/GreenBox.jpg" />
+							</image>
+						</ImageView>
+						<ImageView fx:id="white3" fitHeight="195.0" fitWidth="208.0"
+							layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@_FallSemester2015/CSCI136_FundofComputerScience2/_workspace/PGM_SemesterProject/src/application/whitebox.jpg" />
+							</image>
+						</ImageView>
+						<ImageView fx:id="white2" fitHeight="203.0" fitWidth="203.0"
+							layoutX="404.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@_FallSemester2015/CSCI136_FundofComputerScience2/_workspace/PGM_SemesterProject/src/application/whitebox.jpg" />
+							</image>
+						</ImageView>
+						<ImageView fx:id="white4" fitHeight="188.0" fitWidth="200.0"
+							layoutX="205.0" layoutY="186.0" pickOnBounds="true"
+							preserveRatio="true">
+							<image>
+								<Image
+									url="@_FallSemester2015/CSCI136_FundofComputerScience2/_workspace/PGM_SemesterProject/src/application/whitebox.jpg" />
+							</image>
+						</ImageView>
+						<ImageView fx:id="whte1" fitHeight="198.0" fitWidth="209.0"
+							layoutX="197.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@_FallSemester2015/CSCI136_FundofComputerScience2/_workspace/PGM_SemesterProject/src/application/whitebox.jpg" />
+							</image>
+						</ImageView>
+						<ImageView fx:id="logomain" fitHeight="257.0" fitWidth="204.0"
+							layoutX="198.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@_FallSemester2015/CSCI136_FundofComputerScience2/_workspace/PGM_SemesterProject/src/application/LOGO.JPG" />
+							</image>
+						</ImageView>
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab fx:id="LibraryTab" text="Library">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+					prefWidth="200.0">
+					<children>
+						<ImageView fx:id="darklogo" fitHeight="326.0" fitWidth="600.0"
+							layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@_FallSemester2015/CSCI136_FundofComputerScience2/_workspace/PGM_SemesterProject/src/application/LogoPageLibrary.jpg" />
+							</image>
+						</ImageView>
+						<TextArea fx:id="librarylist" layoutX="220.0" layoutY="46.0"
+							prefHeight="277.0" prefWidth="366.0" promptText="Libaray List"
+							text="--------------------------------------------------------------------&#10;                                     THE LIBRARY LIST:&#10;--------------------------------------------------------------------&#10;&#10;------------------------&#10;   fantasy genre:&#10;------------------------&#10;&#10;1. Title: Harry Potter and the Philosopher's Stone&#10;    Author: J. K. Rowling &#10;    Series: Book 1 of 7 &#10;&#10;2. Title: Harry Potter and the Chamber of Secrets&#10;    Author: J. K. Rowling &#10;    Series: Book 2 of 7 &#10;&#10;3. Title: Harry Potter and the Prisoner of Azkaban&#10;    Author: J. K. Rowling &#10;    Series: Book 3 of 7&#10;&#10;4. Title: Harry Potter and the Goblet of Fire&#10;    Author: J. K. Rowling &#10;    Series: Book 4 of 7&#10;&#10;5. Title: Harry Potter and the Order of the Phoenix&#10;    Author: J. K. Rowling &#10;    Series: Book 5 of 7&#10;&#10;6. Title: Harry Potter and the Half-Blood Prince&#10;    Author: J. K. Rowling &#10;    Series: Book 6 of 7&#10;&#10;7. Title: Harry Potter and the Deathly Hallows&#10;    Author: J. K. Rowling &#10;    Series: Book 7 of 7&#10;&#10;8. Title: Throne of Glass&#10;    Author: Sarah J. Maas&#10;    Series: Book 1 of 4&#10;&#10;9. Title: Crown of Midnight&#10;    Author: Sarah J. Maas&#10;    Series: Book 2 of 4&#10;&#10;10. Title: Heir of Fire&#10;      Author: Sarah J. Maas&#10;      Series: Book 3 of 4&#10;&#10;11. Title: Queen of Shadows&#10;      Author: Sarah J. Maas&#10;      Series: Book 4 of 4&#10;&#10;12. Title: The Assassin's Blade: The Throne of Glass Novellas&#10;      Author: Sarah J. Maas&#10;      Prequel: Novel&#10;&#10;13. Title: Redwall&#10;      Author: Brian Jacques&#10;      Series: Book 1 of 22&#10;&#10;14. Title: Mossflower&#10;      Author: Brian Jacques&#10;      Series: Book 2 of 22&#10;&#10;15. Title: Mattimeo&#10;      Author: Brian Jacques&#10;      Series: Book 3 of 22&#10;&#10;16. Title: Mariel of Redwall&#10;      Author: Brian Jacques&#10;      Series: Book 4 of 22&#10;&#10;17. Title: Salamandastron&#10;      Author: Brian Jacques&#10;      Series: Book 5 of 22&#10;&#10;18. Title: Martin the Warrior&#10;      Author: Brian Jacques&#10;      Series: Book 6 of 22&#10;&#10;19. Title: The Bellmaker&#10;      Author: Brian Jacques&#10;      Series: Book 7 of 22&#10;&#10;20. Title: Outcast of Redwall&#10;      Author: Brian Jacques&#10;      Series: Book 8 of 22&#10;&#10;21. Title: The Perals of Lutra&#10;      Author: Brian Jacques&#10;      Series: Book 9 of 22&#10;&#10;22. Title: The Long Patrol&#10;      Author: Brian Jacques&#10;      Series: Book 10 of 22&#10;&#10;23. Title: Marlfox&#10;      Author: Brian Jacques&#10;      Series: Book 11 of 22&#10;&#10;24. Title: The Legend of Luke&#10;      Author: Brian Jacques&#10;      Series: Book 12 of 22&#10;&#10;25. Title: Lord Brocktree&#10;      Author: Brian Jacques&#10;      Series: Book 13 of 22&#10;&#10;26. Title: The Taggerung&#10;      Author: Brian Jacques&#10;      Series: Book 14 of 22&#10;&#10;27. Title: Triss&#10;      Author: Brian Jacques&#10;      Series: Book 15 of 22&#10;&#10;28. Title: Loamhedge&#10;      Author: Brian Jacques&#10;      Series: Book 16 of 22&#10;&#10;29. Title: Rakkety Tam&#10;      Author: Brian Jacques&#10;      Series: Book 17 of 22&#10;&#10;30. Title: High Rhulain&#10;      Author: Brian Jacques&#10;      Series: Book 18 of 22&#10;&#10;31. Title: Eulalia!&#10;      Author: Brian Jacques&#10;      Series: Book 19 of 22&#10;&#10;32. Title: Doomwyte&#10;      Author: Brian Jacques&#10;      Series: Book 20 of 22&#10;&#10;33. Title: The Sable Queen&#10;      Author: Brian Jacques&#10;      Series: Book 21 of 22&#10;&#10;34. Title: The Rogue Crew&#10;      Author: Brian Jacques&#10;      Series: Book 22 of 22&#10;&#10;35. Title: DragonSpell&#10;      Author: Donita Kathleen Paul&#10;      Series: Book 1 of 5&#10;&#10;36. Title: DragonQuest&#10;      Author: Donita Kathleen Paul&#10;      Series: Book 2 of 5&#10;&#10;37. Title: DragonKnight&#10;      Author: Donita Kathleen Paul&#10;      Series: Book 3 of 5&#10;&#10;38. Title: DragonFire&#10;      Author: Donita Kathleen Paul&#10;      Series: Book 4 of 5&#10;&#10;39. Title: DragonLight&#10;      Author: Donita Kathleen Paul&#10;      Series: Book 5 of 5&#10;&#10;40. Title: Dealing with Dragons&#10;      Author: Patricia C. Wrede&#10;      Series: Book 1 of 4&#10;&#10;41. Title: Searching for Dragons&#10;       Author: Patricia C. Wrede&#10;       Series: Book 2 of 4&#10;&#10;42. Title: Calling on Dragons&#10;       Author: Patricia C. Wrede&#10;       Series: Book 3 of 4&#10;&#10;43. Title: Talking to Dragons&#10;       Author: Patricia C. Wrede&#10;       Series: Book 4 of 4&#10;&#10;44. Title: Book of Enchantments&#10;       Author: Patricia C. Wrede&#10;       Novel:  Prequel&#10;&#10;45. Title: Eragon&#10;       Author: Christopher Paolini&#10;       Series: Book 1 of 4&#10;&#10;46. Title: Eldest&#10;       Author: Christopher Paolini&#10;       Series: Book 2 of 4&#10;&#10;45. Title: Brisinger&#10;       Author: Christopher Paolini&#10;       Series: Book 3 of 4&#10;&#10;46. Title: Inheritance&#10;       Author: Christopher Paolini&#10;       Series: Book 4 of 4&#10;&#10;47. Title: The Lightning Thief&#10;       Author: Rick Riordan&#10;       Series: Book 1 of 5&#10;&#10;48. Title: The Sea of Monsters&#10;       Author: Rick Riordan&#10;       Series: Book 2 of 5&#10;&#10;49. Title: The Titan’s Curse&#10;       Author: Rick Riordan&#10;       Series: Book 3 of 5&#10;&#10;50. Title: The Battle of the Labyrinth&#10;       Author: Rick Riordan&#10;       Series: Book 4 of 5&#10;&#10;51. Title: The Last Olympian&#10;       Author: Rick Riordan&#10;       Series: Book 5 of 5&#10;&#10;52. Title: The Red Pyramid&#10;       Author: Rick Riordan&#10;       Series: Book 1 of 3&#10;&#10;53. Title: The Throne of Fire&#10;       Author: Rick Riordan&#10;       Series: Book 2 of 3&#10;&#10;54. Title: The Serpent’s Shadow&#10;       Author: Rick Riordan&#10;       Series: Book 3 of 3&#10;&#10;55. Title: The Golden Compass&#10;       Author: Philip Pullman&#10;       Series: Book 1 of 3&#10;&#10;56. Title: The Subtle Knife&#10;       Author: Philip Pullman&#10;       Series: Book 2 of 3&#10;&#10;57. Title: The Amber Spyglass&#10;       Author: Philip Pullman&#10;       Series: Book 3 of 3&#10;&#10;58. Title: The Eye of the World&#10;       Author: Robert Jordan&#10;       Series: Book 1 of 13&#10;&#10;59. Title: The Great Hunt&#10;       Author: Robert Jordan&#10;       Series: Book 2 of 13&#10;&#10;60. Title: The Dragon Reborn&#10;       Author: Robert Jordan&#10;       Series: Book 3 of 13&#10;&#10;61. Title: The Shadow Rising&#10;       Author: Robert Jordan&#10;       Series: Book 4 of 13&#10;&#10;62. Title: The Fires of Heaven&#10;       Author: Robert Jordan&#10;       Series: Book 5 of 13&#10;&#10;63. Title: Lord of Chaos&#10;       Author: Robert Jordan&#10;       Series: Book 6 of 13&#10;&#10;64. Title: A Crown of Swords&#10;       Author: Robert Jordan&#10;       Series: Book 7 of 13&#10;&#10;65. Title: The Path of Daggers&#10;       Author: Robert Jordan&#10;       Series: Book 8 of 13&#10;&#10;66. Title: Winter’s Heart&#10;       Author: Robert Jordan&#10;       Series: Book 9 of 13&#10;&#10;67. Title: Knife of Dreams&#10;       Author: Robert Jordan&#10;       Series: Book 10 of 13&#10;&#10;68. Title: The Gathering Storm&#10;       Author: Robert Jordan &amp; Brandon Sanderson&#10;       Series: Book 11 of 13&#10;&#10;69. Title: Towers of Midnight&#10;       Author: Robert Jordan &amp; Brandon Sanderson&#10;       Series: Book 12 of 13&#10;&#10;70. Title: A Memory of Light&#10;       Author: Robert Jordan &amp; Brandon Sanderson&#10;       Series: Book 13 of 13&#10;&#10;71. Title: New Spring&#10;       Author: Robert Jordan&#10;       Novel: Prequel&#10;&#10;72. Title: Artemis Fowl&#10;       Author: Eoin Colfer&#10;       Series: Book 1 of 8&#10;&#10;73. Title: Artemis Fowl: The Arctic Incident&#10;       Author: Eoin Colfer&#10;       Series: Book 2 of 8&#10;&#10;74. Title: Artemis Fowl: The Eternity Code&#10;       Author: Eoin Colfer&#10;       Series: Book 3 of 8&#10;&#10;75. Title: Artemis Fowl: The Opal Deception&#10;       Author: Eoin Colfer&#10;       Series: Book 4 of 8&#10;&#10;76. Title: Artemis Fowl: The Lost Colony&#10;       Author: Eoin Colfer&#10;       Series: Book 5 of 8&#10;&#10;77. Title: Artemis Fowl: The Time Paradox&#10;       Author: Eoin Colfer&#10;       Series: Book 6 of 8&#10;&#10;78. Title: Artemis Fowl: The Atlantis Complex&#10;       Author: Eoin Colfer&#10;       Series: Book 7 of 8&#10;&#10;79. Title: Artemis Fowl: The Last Guardian&#10;       Author: Eoin Colfer&#10;       Series: Book 8 of 8&#10;&#10;80. Title: Children of Amarid&#10;       Author: David B. Coe&#10;       Series: Book 1 of 3&#10;&#10;81. Title: The Outlanders&#10;       Author: David B. Coe&#10;       Series: Book 2 of 3&#10;&#10;82. Title: Eagle-Sage&#10;       Author: David B. Coe&#10;       Series: Book 3 of 3&#10;&#9;&#10;83. Title: Watership Down&#10;       Author: Richard Adams&#10;       Novel&#10;&#10;84. Title: Tales from Watership Down&#10;       Author: Richard Adams&#10;       Novel: Sequel&#10;&#10;85. Title: Alanna: The First Adventure&#10;       Author: Tamora Pierce&#10;       Series: Book 1 of 4&#10;&#10;86. Title: In the Hand of the Goddess&#10;       Author: Tamora Pierce&#10;       Series: Book 2 of 4&#10;&#10;87. Title: Alanna: The Woman Who Rides Like a Man&#10;       Author: Tamora Pierce&#10;       Series: Book 3 of 4&#10;&#10;88. Title: Lioness Rampant&#10;       Author: Tamora Pierce&#10;       Series: Book 4 of 4&#10;&#10;89. Title: Wild Magic&#10;       Author: Tamora Pierce&#10;       Series: Book 1 of 4&#10;&#10;90. Title: Wolf-Speaker&#10;       Author: Tamora Pierce&#10;       Series: Book 2 of 4&#10;&#10;91. Title: Emperor Mage&#10;       Author: Tamora Pierce&#10;       Series: Book 3 of 4&#10;&#10;92. Title: The Realms of the Gods&#10;       Author: Tamora Pierce&#10;       Series: Book 4 of 4&#10;&#10;93. Title: The Book of Three&#10;       Author: Lloyd Alexander&#10;       Series: Book 1 of 5&#10;&#10;94. Title: The Black Cauldron&#10;       Author: Lloyd Alexander&#10;       Series: Book 2 of 5&#10;&#10;95. Title: The Castle of Llyr&#10;       Author: Lloyd Alexander&#10;       Series: Book 3 of 5&#10;&#10;96. Title: Taran Wanderer&#10;       Author: Lloyd Alexander&#10;       Series: Book 4 of 5&#10;&#10;97. Title: The High King&#10;       Author: Lloyd Alexander&#10;       Series: Book 5 of 5&#10;&#10;98. Title: A Game of Thrones&#10;       Author: George R. R. Martin&#10;       Series: Book 1 of 5&#10;&#10;99. Title: A Clash of Kings&#10;       Author: George R. R. Martin&#10;       Series: Book 2 of 5&#10;&#10;100. Title: A Storm of Swords&#10;         Author: George R. R. Martin&#10;         Series: Book 3 of 5&#10;&#10;101. Title: A Feast for Crows&#10;         Author: George R. R. Martin&#10;         Series: Book 4 of 5&#10;&#10;102. Title: A Dance with Dragons&#10;         Author: George R. R. Martin&#10;         Series: Book 5 of 5&#10;&#10;103. Title: The Hobbit&#10;         Author: J. R. R. Tolkien&#10;         Series: Book 1 of 4&#10;&#10;104. Title: The Fellowship of the Ring&#10;         Author: J. R. R. Tolkien&#10;         Series: Book 2 of 4&#10;&#10;105. Title: The Two Towers&#10;         Author: J. R. R. Tolkien&#10;         Series: Book 3 of 4&#10;&#10;106. Title: The Return of the King&#10;         Author: J. R. R. Tolkien&#10;         Series: Book 4 of 4&#10;&#10;107. Title: The Magician's Nephew&#10;         Author: C. S. Lewis&#10;         Series: Book 1 of 7&#10;&#10;108. Title: The Lion, the Witch and the Wardrobe&#10;         Author: C. S. Lewis&#10;         Series: Book 2 of 7&#10;&#10;109. Title: The Horse and His Boy&#10;         Author: C. S. Lewis&#10;         Series: Book 3 of 7&#10;&#10;110. Title: Prince Caspian&#10;         Author: C. S. Lewis&#10;         Series: Book 4 of 7&#10;&#10;111. Title: The Voyage of the Dawn Treader&#10;         Author: C. S. Lewis&#10;         Series: Book 5 of 7&#10;&#10;112. Title: The Silver Chair       &#10;         Author: C. S. Lewis&#10;         Series: Book 6 of 7&#10;&#10;113. Title: The Last Battle       &#10;         Author: C. S. Lewis&#10;         Series: Book 7 of 7&#10;&#10;114. Title: Magic Kingdom for Sale–Sold&#10;         Author: Terry Brooks&#10;         Series: Book 1 of 6&#10;&#10;115. Title: The Black Unicorn&#10;         Author: Terry Brooks&#10;         Series: Book 2 of 6&#10;&#10;116. Title: Wizard at Large&#10;         Author: Terry Brooks&#10;         Series: Book 3 of 6&#10;&#10;117. Title: The Tangle Box&#10;         Author: Terry Brooks&#10;         Series: Book 4 of 6&#10;&#10;118. Title: Witches’ Brew&#10;         Author: Terry Brooks&#10;         Series: Book 5 of 6&#10;&#10;119. Title: A Princess of Landover&#10;         Author: Terry Brooks&#10;         Series: Book 6 of 6&#10;&#10;120. Title: The Redemption of Althalus&#10;         Author: David and Leigh Eddings&#10;         Novel&#10;&#10;------------------------&#10;   classic genre:&#10;------------------------&#10;&#10;121. Title: Wuthering Heights&#10;         Author: Emily Brontë &#10;         Novel&#10;&#10;122. Title: To Kill Mocking Bird&#10;         Author: Harper Lee&#10;         Novel&#10;&#10;123. Title: Jurassic Park and The Lost World&#10;         Author: Michael Crichton&#10;         Novel&#10;&#10;124. Title: Dracula&#10;         Author: Bram Stoker&#10;         Novel&#10;&#10;125. Title: The Complete Works of William Shakespeare&#10;         Author: William Shakespeare&#10;         Novel&#10;&#10;126. Title: The Complete Works of Emily Dickinson&#10;         Author: Emily Dickinson&#10;         Novel&#10;&#10;127. Title: Pride and Prejudice&#10;         Author: Jane Austen&#10;         Novel&#10;&#10;128. Title: Sense and Sensibility&#10;         Author: Jane Austen&#10;         Novel&#10;&#10;130. Title: Jane Eyre&#10;         Author: Charlotte Brontë&#10;         Novel&#10;&#10;131. Title: Great Expectations&#10;         Author: Charles Dickinson&#10;         Novel&#10;&#10;132. Title: Animal Farm&#10;         Author: George Orwell&#10;         Novel&#10;&#10;133. Title: Alice in Wonderland&#10;         Author: Lewis Carroll&#10;         Novel&#10;&#10;134. Title: Fahrenheit 451&#10;         Author: Ray Bradbury&#10;         Novel&#10;&#10;135. Title: The Complete Sherlock Holmes (One)&#10;         Author: Arthur Conan Doyle&#10;         Novel: Part One&#10;&#10;136. Title: The Complete Sherlock Holmes (Two)&#10;         Author: Arthur Conan Doyle&#10;         Novel: Part Two&#10;&#10;137. Title: Treasure Island&#10;         Author: Robert Louis Stevenson&#10;         Novel&#10;&#10;138. Title: The Last Unicorn&#10;         Author: Peter S. Beagle&#10;         Novel&#10;&#10;139. Title: The Princess Bride&#10;         Author: William Goldman&#10;         Novel&#10;&#10;140. Title: 1984&#10;         Author: George Orwell&#10;         Novel&#10;&#10;-----------------------------&#10;  post-apocalyptic  genre:&#10;-----------------------------&#10;&#10;141. Title: The Hunger Games&#10;         Author: Suzanne Collins&#10;         Series: Book 1 of 3&#10;&#10;142. Title: Catching Fire&#10;         Author: Suzanne Collins&#10;         Series: Book 2 of 3&#10;&#10;143. Title: Mockingjay&#10;         Author: Suzanne Collins&#10;         Series: Book 3 of 3&#10;&#10;144. Title: Divergent&#10;         Author: Veronica Roth&#10;         Series: Book 1 of 3&#10;&#10;145. Title: Insurgent&#10;         Author: Veronica Roth&#10;         Series: Book 2 of 3&#10;&#10;146. Title: Allegiant&#10;         Author: Veronica Roth&#10;         Series: Book 3 of 3&#10;&#10;147. Title: The Maze Runner&#10;         Author: James Dashner&#10;         Series: Book 1 of 3&#10;&#10;148. Title: The Scorch Trials&#10;         Author: James Dashner&#10;         Series: Book 2 of 3&#10;&#10;149. Title: The Death Cure&#10;         Author: James Dashner&#10;         Series: Book 3 of 3&#10;&#10;150. Title: The Kill Order&#10;         Author: James Dashner&#10;         Novel: Prequel"
+							wrapText="true" AnchorPane.bottomAnchor="48.0"
+							AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="14.0"
+							AnchorPane.topAnchor="46.0" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab fx:id="FoxPupTab" text="Fox Pup">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+					prefWidth="200.0">
+					<children>
+						<ImageView fx:id="lightlogo" fitHeight="379.0" fitWidth="600.0"
+							layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@_FallSemester2015/CSCI136_FundofComputerScience2/_workspace/PGM_SemesterProject/src/application/FoxPup.jpg" />
+							</image>
+						</ImageView>
+						<TextField fx:id="phonefill" layoutX="298.0" layoutY="227.0"
+							prefHeight="25.0" prefWidth="264.0" />
+						<TextArea fx:id="phone" layoutX="184.0" layoutY="228.0"
+							prefHeight="23.0" prefWidth="107.0" text="Phone #:" />
+						<TextField fx:id="zipcodefill" layoutX="298.0" layoutY="183.0"
+							prefHeight="25.0" prefWidth="264.0" />
+						<TextArea fx:id="zipcode" layoutX="184.0" layoutY="183.0"
+							prefHeight="23.0" prefWidth="107.0" text="Zip Code:" />
+						<TextField fx:id="addressfill" layoutX="299.0" layoutY="131.0"
+							prefHeight="36.0" prefWidth="264.0" />
+						<TextArea fx:id="address" layoutX="184.0" layoutY="131.0"
+							prefHeight="23.0" prefWidth="107.0" text="Address:" />
+						<TextField fx:id="namefill" layoutX="299.0" layoutY="93.0"
+							prefHeight="25.0" prefWidth="264.0" />
+						<TextArea fx:id="name" layoutX="184.0" layoutY="94.0"
+							prefHeight="23.0" prefWidth="107.0" text="Name (First,Last):" />
+						<TextArea fx:id="intro" layoutX="184.0" layoutY="24.0"
+							prefHeight="57.0" prefWidth="379.0"
+							text="So, you want to become a certified fox pup? Awesome, but there are a few things you must do first. Fill out the content below then hit the submit button.&#10;"
+							wrapText="true" />
+						<Button fx:id="submit" layoutX="404.0" layoutY="286.0"
+							mnemonicParsing="false" text="Submit" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+	</tabs>
+</fx:root>
